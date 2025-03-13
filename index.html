@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Connor Hall">
+        <meta name="description" content="Notes app">
+        <meta name="keywords" content="web development, html, css, winnipeg, Canada">
+        <title>Notes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <script src="./assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="app-space flex">
+                    <aside>
+                        <h2>My Notes</h2>
+                    </aside>
+                    <section>
+                        <h2 class="display-title"></h2>
+                        <p class="display-content"></p>
+                        <button class="new-note">
+                            New Note
+                        </button>
+                    </section>
+                </div>
+            </div>
+            <div class="overlay hide">
+                <form>
+                    <input
+                        type="text"
+                        placeholder="Title..."
+                        class="title"
+                    >
+                    <textarea class="content"></textarea>
+                    <div class="flex">
+                        <input
+                            type="button"
+                            value="Save"
+                            class="save"
+                        >
+                        <input
+                            type="button"
+                            value="Cancel"
+                            class="cancel"
+                        >
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

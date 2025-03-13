@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1080px;
+    margin-inline: auto;
+    position: relative;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+body {
+    background-color: #181725;
+    color: #fff;
+}
+
+main {
+    height: 100svh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+div.app-space {
+    width: 100%;
+    height: 600px;
+    background-color: #22213599;
+    border-radius: 10px;
+    position: relative;
+}
+
+aside {
+    width: 30%;
+    background-color: #222135;
+}
+
+section {
+    width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+button {
+    height: 48px;
+    width: 150px;
+    border-radius: 25px;
+    position: absolute;
+    inset: auto 20px 20px auto;
+}
+
+.overlay {
+    height: 100svh;
+    width: 100%;
+    background-color: #00000031;
+    position: fixed;
+    display: grid;
+    place-content: center;
+}
+
+form {
+    width: 550px;
+    padding: 20px;
+    display: grid;
+
+    textarea {
+        resize: none;
+    }
+}
